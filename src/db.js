@@ -3,10 +3,10 @@ const config = require("./utils/config");
 
 // connect to mysql DB
 const connection = mysql.createConnection({
-  host: "localhost",
-  user: "root",
+  host: "bjcmyzpeft7trd7bqgae-mysql.services.clever-cloud.com",
+  user: "uj3d28nhyvjygrps",
   password: config.DB_PASSWORD,
-  database: "streaming_app",
+  database: "bjcmyzpeft7trd7bqgae",
 });
 
 connection.connect(function (err) {
