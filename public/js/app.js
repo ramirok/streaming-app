@@ -248,11 +248,10 @@ window.addEventListener("load", async () => {
   }
 
   // load lastPlayed song from localStorage
-  const saved = localStorage.getItem("config");
+  const saved = localStorage.getItem("lastPlayed");
   if (saved) {
     const parsedSaved = JSON.parse(saved);
-    console.log(parsedSaved);
-    player.load(parsedSaved.lastPlayed);
+    player.load(parsedSaved);
   }
 });
 

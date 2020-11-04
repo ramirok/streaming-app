@@ -2,12 +2,12 @@
   --main-bg-color: #5785ff;
   --main-bg-gradient: linear-gradient(145deg, #5d8eff, #4e78e6);
   --main-bg-gradient-inverted: linear-gradient(145deg, #4e78e6, #5d8eff);
-  --secondary-bg-color: #30353a;
-  --secondary-bg-gradient: linear-gradient(145deg, #33393e, #2b3034);
-  --box-shadow: 9px 9px 26px #1e2125, -5px -5px 26px #42494f;
-  --text-color: #eee;
-  --border-color: #333;
-  --active-song-bg: #4164c1;
+  --secondary-bg-color: #e7eaef;
+  --secondary-bg-gradient: linear-gradient(145deg, #f7faff, #d0d3d7);
+  --box-shadow: 8px 8px 16px #b9bbbf, -8px -8px 16px #ffffff;
+  --text-color: #515c71;
+  --border-color: #ddd;
+  --active-song-bg: #d0dcf4;
 }
 
 * {
@@ -218,11 +218,6 @@ h6 {
   padding: 1.5rem;
 }
 
-/* .songs-list .song:hover {
-  background: var(--active-song-bg);
-  border-radius: 15px;
-} */
-
 .songs-list .song :nth-child(2) {
   flex-grow: 1;
   margin-left: 2rem;
@@ -267,11 +262,6 @@ h6 {
   display: flex;
   justify-content: space-between;
 }
-
-/* .dropDownMenu ul li:hover {
-  background: var(--active-song-bg);
-  border-radius: 15px;
-} */
 
 .dropDownMenu ul li.active {
   background: var(--active-song-bg);

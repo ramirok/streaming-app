@@ -19,12 +19,7 @@ const loadSong = (state) => ({
       state.lastPlayed = parseInt(songId);
 
       // saves new lastPlayed to localStorage
-      const saved = localStorage.getItem("config");
-      if (saved) {
-        const parsedSaved = JSON.parse(saved);
-        parsedSaved.lastPlayed = parseInt(songId);
-        localStorage.setItem("config", JSON.stringify(parsedSaved));
-      }
+      localStorage.setItem("lastPlayed", JSON.stringify(state.lastPlayed));
 
       // dispatch evet for checking like status for like button
       document.dispatchEvent(customEvents.checkLikeStatus);
