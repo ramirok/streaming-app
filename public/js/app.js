@@ -251,6 +251,7 @@ window.addEventListener("load", async () => {
   const saved = localStorage.getItem("config");
   if (saved) {
     const parsedSaved = JSON.parse(saved);
+    console.log(parsedSaved);
     player.load(parsedSaved.lastPlayed);
   }
 });
