@@ -10,20 +10,17 @@
     {
       "src": "/images/icons/logo-72x72.png",
       "type": "image/png",
-      "sizes": "72x72",
-      "purpose": "maskable"
+      "sizes": "72x72"
     },
     {
       "src": "/images/icons/logo-96x96.png",
       "type": "image/png",
-      "sizes": "96x96",
-      "purpose": "maskable"
+      "sizes": "96x96"
     },
     {
       "src": "/images/icons/logo-128x128.png",
       "type": "image/png",
-      "sizes": "128x128",
-      "purpose": "maskable"
+      "sizes": "128x128"
     },
     {
       "src": "/images/icons/logo-144x144.png",
@@ -34,8 +31,7 @@
     {
       "src": "/images/icons/logo-512x512.png",
       "type": "image/png",
-      "sizes": "512x512",
-      "purpose": "maskable"
+      "sizes": "512x512"
     }
   ]
 }
