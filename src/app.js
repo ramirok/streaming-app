@@ -12,7 +12,6 @@ app.use(express.static("public"));
 app.post("/api/users", userController.loginUser);
 app.get("/api/users/like", auth, userController.getLikes);
 app.post("/api/users/like", auth, userController.postLikes);
-app.delete("/api/users/like", auth, userController.deleteLikes);
 app.get("/api/users/favs", auth, userController.getFavsPlaylist);
 
 app.get("/api/playlist/:playlist", playlistController.sendPlaylist);

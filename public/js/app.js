@@ -116,11 +116,8 @@ const playerController = {
   pressLike: async () => {
     // add or delete lastPlayed song from favs list
     if (player.lastPlayed) {
-      const isLiked = player.liked.includes(player.lastPlayed);
-
-      // if the songs is in player.liked, sends a DELETE, if not, sends a POST
       const response = await fetch("/api/users/like", {
-        method: isLiked ? "DELETE" : "POST",
+        method: "POST",
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${JSON.parse(localStorage.getItem("sesion"))}`,

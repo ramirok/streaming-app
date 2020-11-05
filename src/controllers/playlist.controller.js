@@ -1,13 +1,15 @@
-const connection = require("../db");
+const pool = require("../db");
 
-// get playlist by genre
-const sendPlaylist = (req, res) => {
+const sendPlaylist = async (req, res) => {
   const category = req.params.playlist;
-  const q = `SELECT id,track_name,artist FROM tracks WHERE genre="${category}"`;
-  connection.query(q, (err, results) => {
-    if (err) throw err;
-    res.json(results);
-  });
+  try {
+    const q = `SELECT id,track_name,artist FROM tracks WHERE genre="${category}"`;
+    const result = await pool.query(q);
+    res.json(result);
+  } catch (error) {
+    console.log(error);
+    res.status(500).end();
+  }
 };
 
 module.exports = { sendPlaylist };

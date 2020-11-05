@@ -50,6 +50,9 @@ function renderButton() {
         window.location.reload();
       }
     },
+    onfailure: () => {
+      localStorage.removeItem("sesion"); //remove token
+    },
   });
 }
 
