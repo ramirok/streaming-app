@@ -7,7 +7,7 @@ const userController = require("./controllers/users.controller");
 const app = express();
 
 app.use(express.json());
-app.use(express.static("public"));
+app.use(express.static("build"));
 
 app.post("/api/users", userController.loginUser);
 app.get("/api/users/like", auth, userController.getLikes);

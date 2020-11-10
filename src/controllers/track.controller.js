@@ -3,7 +3,9 @@ const fs = require("fs");
 
 // stream song
 const streamTrack = (req, res) => {
-  const track = path.resolve(`public/music/${req.params.track}.mp3`);
+  // const track = path.resolve(`public/assets/music/${req.params.track}.mp3`);
+  const track = path.resolve(`build/assets/music/${req.params.track}.mp3`);
+
   res.set("Content-Type", "audio/mp3");
   res.set("accept-ranges", "bytes");
 
