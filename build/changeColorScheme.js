@@ -1,0 +1,1 @@
+{const e=localStorage.getItem("config");if(e){const o=JSON.parse(e).colorScheme;document.querySelector(":root").classList="",document.querySelector(":root").classList.add(o)}else document.querySelector(":root").classList.add("scheme1")}
