@@ -1,1 +1,10 @@
-{const e=localStorage.getItem("config");if(e){const o=JSON.parse(e).colorScheme;document.querySelector(":root").classList="",document.querySelector(":root").classList.add(o)}else document.querySelector(":root").classList.add("scheme1")}
+{
+  const scheme = localStorage.getItem("config");
+  if (scheme) {
+    const savedScheme = JSON.parse(scheme).colorScheme;
+    document.querySelector(":root").classList = "";
+    document.querySelector(":root").classList.add(savedScheme);
+  } else {
+    document.querySelector(":root").classList.add("scheme1");
+  }
+}

@@ -134,6 +134,7 @@ h6 {
   justify-content: space-between;
   align-items: center;
   height: 100vh;
+  min-width: 30rem;
 }
 
 .upper-buttons {
@@ -403,6 +404,9 @@ h6 {
     .player {
       height: 90vh;
       width: 45vh;
+
+      min-height: 60rem;
+      min-width: 30rem;
     }
   }
 }
